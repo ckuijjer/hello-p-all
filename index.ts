@@ -44,14 +44,14 @@ const usingPThrottle = () => {
     interval: 1500,
   });
 
-  const actions = [
+  const promises = [
     throttle(() => fn(1))(),
     throttle(() => fn(2))(),
     throttle(() => fn(3))(),
     throttle(() => fn(4))(),
   ];
 
-  return Promise.all(actions);
+  return Promise.all(promises);
 };
 
 (async () => {
