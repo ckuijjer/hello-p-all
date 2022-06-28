@@ -44,12 +44,14 @@ const usingPThrottle = () => {
     interval: 1500,
   });
 
-  const promises = [
-    throttle(() => fn(1))(),
-    throttle(() => fn(2))(),
-    throttle(() => fn(3))(),
-    throttle(() => fn(4))(),
+  const actions = [
+    throttle(() => fn(1)),
+    throttle(() => fn(2)),
+    throttle(() => fn(3)),
+    throttle(() => fn(4)),
   ];
+
+  const promises = actions.map((fn) => fn());
 
   return Promise.all(promises);
 };
