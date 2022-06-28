@@ -11,7 +11,7 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "p-all": "^4.0.0",
+    "p-all": "^3",
     "ts-eager": "^2.0.2"
   },
   "devDependencies": {
