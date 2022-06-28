@@ -13,6 +13,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "p-all": "^3",
+    "p-map": "^3.0.0",
     "ts-eager": "^2.0.2"
   },
   "devDependencies": {
