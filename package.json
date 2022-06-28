@@ -1,0 +1,20 @@
+{
+  "name": "hello-p-all",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-eager index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "p-all": "^4.0.0",
+    "ts-eager": "^2.0.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^1.0.1"
+  }
+}
