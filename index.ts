@@ -24,7 +24,7 @@ const usingPAll = () => {
 const usingPMap = () => {
   const inputs = [1, 2, 3, 4];
 
-  return pMap.default(inputs, (input) => fn(input), { concurrency: 2 });
+  return pMap.default(inputs, fn, { concurrency: 2 });
 };
 
 const usingForAwait = async () => {
@@ -59,9 +59,9 @@ const usingPThrottle = () => {
 (async () => {
   // const result = await usingPromiseAll();
   // const result = await usingPAll();
-  // const result = await usingPMap();
+  const result = await usingPMap();
   // const result = await usingForAwait();
-  const result = await usingPThrottle();
+  // const result = await usingPThrottle();
 
   console.log({ result });
 })();
